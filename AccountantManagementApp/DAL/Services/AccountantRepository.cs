@@ -22,20 +22,20 @@ namespace AccountantManagementApp.DAL.Services
 
         public string GetAll()
         {
-            string qry = "select* from AccountantModels";
+            string qry = "select * from AccountantModels";
             return qry;
         }
 
         public string Add()
         {
-            string qry = "insert into AccountantModels(Title, IsCompleted, DueDate)" +
+            string qry = "insert into AccountantModels(FirstName, LastName, DateOfBirth)" +
                 "values('";
             return qry;
         }
 
         public string Update()
         {
-            var query = "update AccountantModels set Title='";
+            var query = "update AccountantModels set FirstName='";
             return query;
         }
 
